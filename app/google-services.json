@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "120836719812",
+    "project_id": "berbagiyuk-d1987",
+    "storage_bucket": "berbagiyuk-d1987.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:120836719812:android:f9d594fac148de0cc9b591",
+        "android_client_info": {
+          "package_name": "com.project.berbagiyukcom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "120836719812-51qhvoeq8bgl48bh2l9psm77pfs3f9ov.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBW6HgZu9_NIxyseHpEhVXpB7Oz_qJhv98"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "120836719812-51qhvoeq8bgl48bh2l9psm77pfs3f9ov.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
