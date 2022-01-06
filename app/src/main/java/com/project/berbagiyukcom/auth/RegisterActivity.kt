@@ -86,7 +86,9 @@ class RegisterActivity : AppCompatActivity() {
             "email" to email,
             "phone" to phone,
             "password" to Hasher.hash(password, HashType.SHA_512),
-            "role" to "user"
+            "role" to "user",
+            "address" to  "",
+            "dp" to "",
         )
 
 

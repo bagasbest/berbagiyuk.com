@@ -12,6 +12,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Berbagiyukcom">
         <activity
+            android:name=".homepage.donate_history.DonateHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".homepage.create_donate.CreateDonateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".homepage.donate.DonateDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".homepage.donate.DonateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".homepage.profile.ProfileEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".homepage.profile.ProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".homepage.HomeActivity"
             android:exported="false" />
         <activity
