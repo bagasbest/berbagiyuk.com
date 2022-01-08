@@ -40,6 +40,27 @@
         app:layout_constraintTop_toTopOf="@+id/logo" />
 
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/services"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
+        android:layout_marginStart="16sp"
+        android:layout_marginEnd="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view11">
+
+        <com.rosemaryapp.amazingspinner.AmazingSpinner
+            android:id="@+id/filterDonation"
+            style="@style/Widget.MaterialComponents.AutoCompleteTextView.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Filter donasi" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvDonate"
         android:layout_width="wrap_content"
@@ -48,8 +69,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view11"
-        tools:listitem="@layout/item_donate" />
+        app:layout_constraintTop_toBottomOf="@+id/services"
+        tools:listitem="@layout/item_donate_menu" />
 
     <TextView
         android:layout_width="wrap_content"

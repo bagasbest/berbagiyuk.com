@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">berbagiyuk.com</string>
     <string name="image">image</string>
+
+    <string-array name="filter">
+        <item>Donasi terbaru</item>
+        <item>Donasi dengan nominal terbanyak</item>
+        <item>Donasi yang anda buat</item>
+        <item>Donasi yang telah selesai</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

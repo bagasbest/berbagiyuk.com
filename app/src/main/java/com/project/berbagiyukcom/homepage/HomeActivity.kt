@@ -97,8 +97,9 @@ class HomeActivity : AppCompatActivity() {
                 if(role == "admin") {
                     binding?.donateHistory?.visibility = View.VISIBLE
                     Glide.with(this)
-                        .load(R.drawable.donate)
+                        .load(R.drawable.donate_new)
                         .into(binding!!.donateHistory)
+                    binding?.donateHistoryText?.visibility = View.VISIBLE
                 }
             }
     }
@@ -110,7 +111,7 @@ class HomeActivity : AppCompatActivity() {
             LinearLayoutManager.HORIZONTAL,
             false
         )
-        adapter = DonateAdapter()
+        adapter = DonateAdapter("home")
         binding?.rvDonate?.adapter = adapter
     }
 

@@ -31,38 +31,56 @@
             app:layout_constraintStart_toStartOf="@+id/view2"
             app:layout_constraintTop_toTopOf="parent" />
 
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold"
+            android:text="berbagiyuk.com"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:text="Bersama membantu sesama"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
         <ImageView
             android:id="@+id/donateHistory"
-            android:layout_width="60dp"
-            android:layout_marginEnd="16dp"
-            android:visibility="gone"
-            android:layout_height="60dp"
-            android:layout_marginStart="16sp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="16sp"
             android:contentDescription="@string/image"
-            app:layout_constraintBottom_toBottomOf="@+id/view2"
+            android:visibility="invisible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:riv_corner_radius="16dp" />
 
-        <EditText
-            android:id="@+id/searchEt"
-            android:layout_width="0dp"
-            android:layout_height="40dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginStart="16sp"
-            android:background="@drawable/bg_rounded"
-            android:backgroundTint="@color/white"
-            android:drawableStart="@drawable/ic_baseline_search_24"
-            android:drawablePadding="10dp"
-            android:inputType="text"
-            android:paddingStart="10sp"
-            android:paddingEnd="10dp"
-            android:singleLine="true"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView"
-            app:layout_constraintEnd_toStartOf="@+id/donateHistory"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
-            app:layout_constraintTop_toTopOf="@+id/imageView" />
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold"
+            android:text="Riwayat\nDonasi"
+            android:textSize="10sp"
+            android:visibility="invisible"
+            android:id="@+id/donateHistoryText"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/donateHistory"
+            app:layout_constraintStart_toStartOf="@+id/donateHistory"
+            app:layout_constraintTop_toBottomOf="@+id/donateHistory" />
 
 
         <View
@@ -199,6 +217,7 @@
             android:layout_width="match_parent"
             tools:listitem="@layout/item_donate"
             android:layout_height="180dp"
+            android:layout_marginTop="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView11" />
@@ -232,6 +251,7 @@
             android:layout_width="match_parent"
             android:layout_height="250dp"
             android:contentDescription="@string/image"
+            android:layout_marginTop="16sp"
             android:id="@+id/banner"
             android:scaleType="fitXY"
             app:layout_constraintEnd_toEndOf="parent"
@@ -267,7 +287,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hak Cipta © 2022 Berbagiyuk.com"
+            android:text="Hak Cipta © 2022 berbagiyuk.com"
             android:textColor="@color/white"
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="@+id/view10"

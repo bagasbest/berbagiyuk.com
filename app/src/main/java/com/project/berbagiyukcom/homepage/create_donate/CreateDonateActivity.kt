@@ -166,22 +166,20 @@ class CreateDonateActivity : AppCompatActivity() {
         mProgressDialog.show()
 
         val uid = System.currentTimeMillis().toString()
-        val ownerId = FirebaseAuth.getInstance().currentUser?.uid
+        val ownerId = FirebaseAuth.getInstance().currentUser!!.uid
 
         FirebaseFirestore
             .getInstance()
             .collection("users")
-            .document(uid)
+            .document(ownerId)
             .get()
             .addOnSuccessListener {
-                val ownerPhone = it.data?.get("phone").toString()
-
 
                 val data = mapOf(
                     "name" to donationName,
                     "owner" to donationOwner,
                     "ownerAddress" to donationOwner,
-                    "ownerPhone" to ownerPhone,
+                    "ownerPhone" to it.data?.get("phone").toString(),
                     "ownerId" to ownerId,
                     "nominal" to donationNominal.toLong(),
                     "to" to donationTo,

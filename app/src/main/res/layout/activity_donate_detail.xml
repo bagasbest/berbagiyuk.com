@@ -20,9 +20,10 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
+        <com.makeramen.roundedimageview.RoundedImageView
             android:id="@+id/logo"
             android:layout_width="60dp"
+            app:riv_corner_radius="12sp"
             android:layout_height="60dp"
             android:layout_marginStart="16sp"
             android:contentDescription="@string/image"
@@ -167,13 +168,22 @@
                 android:text="Nama Pengaju Donasi"
                 android:textColor="@color/white" />
 
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No.Handphone : "
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white" />
+
             <TextView
                 android:id="@+id/to"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/regular"
                 android:layout_marginTop="5dp"
-                android:text="Tujuan Donasi: untuk....."
+                android:text="Tujuan Donasi : untuk....."
                 android:textColor="@color/white" />
 
         </LinearLayout>
@@ -220,11 +230,28 @@
             android:textAllCaps="false"
             android:fontFamily="@font/bold"
             android:textColor="@color/white"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+        <Button
+            android:id="@+id/callDonationOwner"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:visibility="invisible"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="@color/green_dark"
+            android:fontFamily="@font/bold"
+            android:text="Hubungi Pembuat Donasi"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/donateBtn" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
